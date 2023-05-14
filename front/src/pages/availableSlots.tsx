@@ -1,4 +1,7 @@
-// /front/src/pages/availableSlots.tsx
+/*
+  El renderizado se realiza en el cliente (CSR) debido a que el contenido de la pagina depende de la interacción del usuario por lo que se puede proporcionar
+  retroalimentación en tiempo real, además de que el contenido es poco y puede ser renderizado en el cliente.
+*/
 
 import { ApolloClient, InMemoryCache, gql, ApolloError } from '@apollo/client';
 import React, { useState, useEffect } from 'react';

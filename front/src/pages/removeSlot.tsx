@@ -1,4 +1,7 @@
-// /front/src/pages/removeSlot.tsx
+/*
+  El renderizado se genera el cliente (CSR), lo cual es adecuado por la interactividad en tiempo real con el usuario, la acción de eliminar un slot no es necesario
+  que se haga en el servidor, así liberamos recursos de este, así como también podemos hablar de la latencia, la cual disminuye.
+*/
 
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import React, { useState } from 'react';

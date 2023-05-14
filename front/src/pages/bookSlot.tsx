@@ -1,4 +1,7 @@
-// /front/src/pages/bookSlot.tsx
+/*
+  Se realiza renderizado en cliente (CSR) ya que estamos ante un código simple y podemos recibir feedback en tiempo real,
+  disminuyendo la latencia y aprovechando la optimización de recursos.
+*/ 
 
 import { ApolloClient, InMemoryCache, gql, ApolloError } from '@apollo/client';
 import React, { useState } from 'react';
